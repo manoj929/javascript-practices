@@ -23,6 +23,7 @@ function displayMatches() {
     const matchArray = findMatches(this.value, cities);
     const html = matchArray.map(place => {
         const regex = new RegExp(this.value, 'gi');
+        // here we can add some color for searched value using these class selector
         const cityName = place.city.replace(regex, `<span class='h1'>${this.value}</span>`);
         const stateName = place.state.replace(regex, `<span class='h1'>${this.value}</span>`)
         return `
