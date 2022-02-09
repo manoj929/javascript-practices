@@ -33,7 +33,22 @@ const people = [
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
+    const comment = comments.find(comment => comment.id === 823423);
+    console.log(comment)
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
     // delete the comment with the ID of 823423
+    // it gives index poition in comments if there or it gives negative number
+    const index = comments.findIndex(comment => comment.id === 823423);
+    
+    console.log(index);
+    comments.splice(index,1);
+    // or
+    // const newComment = [
+    //     ...comments.slice(0, index),
+    //     ...comments.slice(index + 1)
+    // ]
+    // console.log(newComment)
+
+    console.log(comments)
