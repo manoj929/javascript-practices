@@ -5,11 +5,18 @@ html {
 body {
   width: 800px;
   margin: 0 auto;
+  background: linear-gradient(
+    rgba(31, 101, 182, 0.651),
+    rgba(66, 41, 105, 0.651)
+  );
+  height: 100vh;
+  color: rgb(73, 48, 48);
 }
 
 h1,
 h2 {
   font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 2px whitesmoke;
 }
 
 /* header styles */
